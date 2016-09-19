@@ -1,23 +1,13 @@
-package com.wechat.vo;
+package com.wechat.vo.message;
 
 /**
- * Created by wuxing on 2016/9/13.
+ * Created by wuxing on 2016/9/18.
  */
-public class TextMessage {
+public class BaseMessage {
     private String ToUserName;
     private String FromUserName;
     private Long CreateTime;
     private String MsgType;
-    private String Content;
-    private String MsgId;
-
-    public String getContent() {
-        return Content;
-    }
-
-    public void setContent(String content) {
-        Content = content;
-    }
 
     public Long getCreateTime() {
         return CreateTime;
@@ -33,14 +23,6 @@ public class TextMessage {
 
     public void setFromUserName(String fromUserName) {
         FromUserName = fromUserName;
-    }
-
-    public String getMsgId() {
-        return MsgId;
-    }
-
-    public void setMsgId(String msgId) {
-        MsgId = msgId;
     }
 
     public String getMsgType() {
